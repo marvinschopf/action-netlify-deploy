@@ -1,5 +1,5 @@
 name: 'Netlify Deploy'
-author: 'Jo Colina'
+author: 'Marvin Schopf and Jo Colina'
 description: 'Netlify Deploy'
 
 inputs:
