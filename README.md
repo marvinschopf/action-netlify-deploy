@@ -18,7 +18,7 @@ jobs:
   deploy:
     name: 'Deploy to Netlify'
     steps:
-      - uses: jsmrcaga/action-netlify-deploy@v1.1.0
+      - uses: marvinschopf/action-netlify-deploy@main
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.MY_TOKEN_SECRET }}
           NETLIFY_DEPLOY_TO_PROD: true
@@ -62,7 +62,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: jsmrcaga/action-netlify-deploy@master
+      - uses: marvinschopf/action-netlify-deploy@main
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -86,7 +86,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: jsmrcaga/action-netlify-deploy@master
+      - uses: marvinschopf/action-netlify-deploy@main
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -119,7 +119,7 @@ jobs:
 
       # Sets the branch name as environment variable
       - uses: nelonoel/branch-name@v1.0.1
-      - uses: jsmrcaga/action-netlify-deploy@master
+      - uses: marvinschopf/action-netlify-deploy@main
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
